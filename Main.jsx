@@ -16,7 +16,7 @@ export default function Main() {
             window.scroll({
                 top: yCoord,
                 behavior: "smooth"
-            }, 1000)
+            })
         }
     }, [recipe])
     
