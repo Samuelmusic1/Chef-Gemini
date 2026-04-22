@@ -17,14 +17,15 @@ const openAI = new OpenAI({
 export async function getRecipeFromChefGemini(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
 
-    const response = await openAI.chat.completions.create({
+    const response = await openAI.responses.create({
         model: "inclusionai/ling-2.6-flash:free",
         max_tokens: 1024,
         messages: [
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: `I have ${ingredientsString}. Please give me a recipe!` },
         ],
+        tools: [{ type: "web_search_preview"}]
     });
-    return response.choices[0].message.content
+    return response.output_text
 }
 
