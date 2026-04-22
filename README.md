@@ -1,19 +1,19 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+This was my first fully interactive React application and a significant milestone in my learning journey. It built on my understanding of data-driven React and state management.
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+While developing the Chef Gemini App, I learned how to handle user interactions through event listeners, which are fundamental to building interactive web applications.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+I gained a solid understanding of React state, how it persists data across renders, and how state updates trigger re-renders. This reinforced the core React principle that the UI should always be a function of state.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+I also implemented conditional rendering to display different parts of the UI based on state and props, and worked with forms to collect and process user input.
 
-Happy Coding!
+In addition, I explored state management strategies and gained a better understanding of application structure and architecture.
+
+On the AI side, I integrated the OpenAI JavaScript API (via chat completions) to generate responses. I also used OpenRouter models and implemented streaming responses to improve the user experience.
+
+To ensure security, I used DOMPurify to sanitize HTML output before rendering it in the DOM.
+
+I also experimented with system prompts to guide model behavior and improve the relevance of responses.
+
+Overall, this project helped me combine React fundamentals with AI integration in a practical way and significantly improved my confidence in building real-world applications.
+
+https://chef-gemini-cooks.vercel.app/
