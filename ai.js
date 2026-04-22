@@ -25,7 +25,7 @@ export async function getRecipeFromChefGemini(ingredientsArr) {
             { role: "user", content: `I have ${ingredientsString}. Please give me a recipe!` },
         ],
         tools: [{ type: "web_search_preview"},
-                { "type: "image_generation" }
+                { type: "image_generation" }
                ]
     });
     return response.output_text
