@@ -20,7 +20,7 @@ export async function getRecipeFromChefGemini(ingredientsArr) {
     const response = await openAI.responses.create({
         model: "inclusionai/ling-2.6-flash:free",
         max_tokens: 1024,
-        messages: [
+        input: [
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: `I have ${ingredientsString}. Please give me a recipe!` },
         ],
