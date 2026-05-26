@@ -37,7 +37,7 @@ export async function getRecipeFromChefGemini(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
 
     const response = await openAI.responses.create({
-        model: "deepseek/deepseek-v4-flash:free",
+        model: "baidu/cobuddy:free",
         max_tokens: 1024,
         input: [
             { role: "system", content: SYSTEM_PROMPT },
