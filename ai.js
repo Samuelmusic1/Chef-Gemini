@@ -37,7 +37,7 @@ export async function getRecipeFromChefGemini(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
 
     const response = await openAI.responses.create({
-        model: "google/gemma-4-31b-it:free",
+        model: "openrouter/owl-alpha",
         max_tokens: 1024,
         input: [
             { role: "system", content: SYSTEM_PROMPT },
