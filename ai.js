@@ -37,7 +37,7 @@ export async function getRecipeFromChefGemini(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
 
     const response = await openAI.responses.create({
-        model: "baidu/cobuddy:free",
+        model: "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         max_tokens: 1024,
         input: [
             { role: "system", content: SYSTEM_PROMPT },
